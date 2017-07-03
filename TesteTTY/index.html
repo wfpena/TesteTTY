@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XYV - Logística e Transportes</title>
+	<script src="jquery-3.2.1.js"></script>
+	<script src="angular.js"></script>
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+
+	<meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+
+	<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+</head>
+<body class="body">
+	<header class="mainheader">
+	<div class="top-columns">
+		<div class="left_column">
+			<img class="logo-img" src="img/logo2.png">
+		</div>
+
+    	<div class="search-bar">
+       		 <input type="text" name="search" placeholder="Quem você procura?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Quem você procura?'"/><button class="search-btn" type="submit" )"></button>
+		</div>
+
+		<div class="right-column">
+			<header>
+				<img class="img-circle" src="img/face_log.jpg">
+				<div class="right-col-inf">
+					<h2>Katia</h2>
+					<h3>Relações com Participantes</h3>
+					<p class="post-info">Seu parfil está 85% completo, <a href="#">completar</a></p>
+				</div>
+			</header>
+			<div class="right-nav">
+				<ul>
+					<li><img src="img/icones/menu.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/megaphone.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/textmsg.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/alarm.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/link.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/decrease.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/increase.png" style="width:20px;height:20px;"></li>
+					<li><img src="img/icones/power.png" style="width:20px;height:20px;"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<nav><ul id="header-nav">
+			<li><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#"  class="active">Conheça XYV</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Planos</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Acontece</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Publicações</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Sistemas</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Normas</a><span class="divider">&bull;</span></li>
+			<li><a href="#" class="dropdown">Formulários</a><span class="divider">&bull;</span>
+				<div class="dropdown-content">
+					<header>Formulário</header>
+					<content>
+						<div id="dropdown-first">
+							<ul><li><h1>RH</h1>
+								<ul id="list-ins">
+									<li><a href="#">Afastamento</a></li>
+									<li><a href="#">Auxílio Alimentação / Refeição</a></li>
+									<li><a href="#">Auxílio Creche</a></li>
+									<li><a href="#">Auxílio Educação</a></li>
+									<li><a href="#">Férias</a></li>
+									<li><a href="#">Recrutamento e Seleção</a></li>
+									<li><a href="#">Vale Transporte</a></li>
+								</ul>
+							</li>
+							<li><h1>TI</h1>
+							<ul>
+								<li><a href="#">Registro de Incidentes</a></li>
+								<li><a href="#">Utilização dos Recursos</a></li>
+							</ul>
+							</li>
+						</div>
+						<div id="dropdown-second">
+							<ul>
+								<li><h1>Administrativo</h1>
+									<ul id="list-ins">
+										<li><a href="#">Cadastro PF</a></li>
+										<li><a href="#">Cadastro PJ</a></li>
+										<li><a href="#">The Amazing SpiderMan</a></li>
+										<li><a href="#">Protocolo de Notas Fiscais</a></li>
+										<li><a href="#">Resumo de Contrato</a></li>
+										<li><a href="#">Serviço de Mensageiro</a></li>
+										<li><a href="#">Declaração de Dependentes - IR</a></li>
+										<li><a href="#">Termo de Responsabilidade - Celular</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</content>
+				</div></li>
+			<li class="dropdown"><a href="#">Gestão de Pessoas</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">RH</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Administrativo</a><span class="divider">&bull;</span></li>
+			<li class="dropdown"><a href="#">Metas</a><span class="divider">&bull;</span></li>
+			<span class="divider">&bull;</span>
+		</ul></nav>
+	</header>
+
+<!-- 	<div class="page"> -->
+	<div class="mainContent">
+		<div class="content">
+			<article class="topcontent">
+				<header>
+					<h2>Notícias em Destaque</h2>
+					<p class="post-info">Navegue pelas <a href="#">notícias mais acessadas</a> ou, <a href="#">veja todas</a>.</p>
+				</header>
+
+				<content>
+					<div class="img-cont"><img src="img/publico.jpg" alt="Imagem da plateia"></div>
+					<div class="mainheadline-cont">
+						<h2>EVENTOS</h2>
+						<h1 class="post-info">13 de abril de 2015</h1>
+						<h4><a href="#">Conscientização financeira e entretenimento</a></h4>
+						<h1 class="post-info">Com auditório cheio, a XZY, reuniu todos os clientes para um envento de conscientização financeira e entretenimento.</h1>
+						<footer class="footer-cont">
+							VER A NOTÍCIA
+						</footer>
+					</div>
+					
+					<div class="filtro-cont">
+						<header>
+							<form>
+								<label for="categoria">Filtro por:</label>
+								<select name="categoria-select" id="select-categoria">
+									<option>Categoria</option>
+									<option>Dicas</option>
+									<option>Institucional</option>
+									<option>RH</option>
+								</select>
+							</form>
+						</header>
+						<content>
+							<ul id="container-list">
+								<li><div class="container-cont"><a href=""><img src="http://www.iconsdb.com/icons/preview/blue/square-xxl.png" alt="icon" width="60" height="60" /></a></div>
+								<div class="text-cont">
+									<h4>DICAS</h4>
+									<h3>
+										<a href="#">Educação financeira na infância é base para a aposentadoria</a>
+									</h3>
+								</div>
+								</li>	
+									<li><div class="container-cont"><a href=""><img src="http://www.iconsdb.com/icons/preview/blue/square-xxl.png" alt="icon" width="60" height="60" /></a></div>
+								<div class="text-cont">
+									<h4>INSTITUCIONAL</h4>
+									<h3>
+										<a href="#"> Participar dos jogos</a>
+									</h3>
+								</div></li>
+								
+									<li><div class="container-cont"><a href=""><img src="http://www.iconsdb.com/icons/preview/blue/square-xxl.png" alt="icon" width="60" height="60" /></a></div>
+								<div class="text-cont">
+									<h4>RH</h4>
+									<h3>
+										<a href="#"> Pesquisa de clima</a>
+									</h3>
+								</div></li>
+							</ul>	
+						</content>
+						<div>
+							
+						</div>
+					</div>
+				</content>
+			</article>
+
+		</div>
+<!-- 	</div> -->
+
+	<aside class="top-sidebar">
+		<article>
+		<div class="tab">
+  			<button class="tablinks active" onclick="openCity(event, 'Comunicados')">Comunicados</button>
+  			<button class="tablinks" onclick="openCity(event, 'Classificados')">Classificados</button>
+		</div>
+		<div id="Comunicados" class="tabcontent">
+  			<ul>
+  				<li><h4>DATA</h4><p class="post-info">Informações</p></li>
+  				<li><h4>DATA</h4><p class="post-info">Informações</p></li>
+  				<li><h4>DATA</h4><p class="post-info">Informações</p></li>
+  				<li><h4>DATA</h4><p class="post-info">Informações</p></li>
+  			</ul>
+		</div>
+
+		<div id="Classificados" class="tabcontent">
+  			<h3>Classificados</h3>
+  			<p>Informação Classificados.</p> 
+		</div>
+	</aside>
+
+	<footer class="mainFooter">
+		<p>Copyright &copy; <a href="#">copyright.com </a> </p>
+	</footer>
+
+
+	<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+</body>
+</html>
